@@ -1,54 +1,68 @@
-package youtube2;
+package oop1;
+
+// PascalCase --> CLASS LARIN İSİMLENDİRİLMESİ.
+
+// KELİMLERİN İLK HARFİ BÜYÜK
 
 public class Product {
-	private int id;
 	private String name;
-	private String description;
-	private double price;
-	private int stockAmount;
-	private String renk;
-	private String kod;
-	
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id=id;
-	}
+	private double unitPrice;
+	private double discount;
+	private String imageUrl;
+	private int unitInStock;
+
 	public String getName() {
 		return name;
 	}
+
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getDescription() {
-		return description;
+
+	public double getUnitPrice() {
+		return unitPrice;
 	}
-	public void setDescription(String description) {
-		this.description = description;
+
+	public void setUnitPrice(double unitPrice) {
+		this.unitPrice = unitPrice;
 	}
-	public double getPrice() {
-		return price;
+
+	public double getDiscount() {
+		return discount;
 	}
-	public void setPrice(double price) {
-		this.price = price;
+
+	public void setDiscount(double discount) {
+		this.discount = discount;
 	}
-	public int getStockAmount() {
-		return stockAmount;
+
+	public String getImageUrl() {
+		return imageUrl;
 	}
-	public void setStockAmount(int stockAmount) {
-		this.stockAmount = stockAmount;
+
+	public void setImageUrl(String imageUrl) {
+		this.imageUrl = imageUrl;
 	}
-	public String getRenk() {
-		return renk;
+
+	public int getUnitInStock() {
+		return unitInStock;
 	}
-	public void setRenk(String renk) {
-		this.renk = renk;
+
+	public void setUnitInStock(int unitInStock) {
+		this.unitInStock = unitInStock;
 	}
-	public String getKod() {
-		return this.name.substring(0,1)+id;
-	}
-	
-	
+
+	// PRODUCT BİR CLASS TIR
+	// CLASS DEDİĞİMİZ BİR ŞABLON.
+	// BU ŞABLONDA NAME= KAHVE MAKİNESİ YAZMAYACAĞIZ
+
+	// BU PRODUCT DA NELER OLABİLİR, HANGİ ÖZELLİKLERİ TUTACAĞIZ.
+
+	// FİELDLAR camelCase YAZILIR.
+
+	// PRİVATE ÖZEL BİR DURUM GETİRMEK İÇİN
+	// YANİ YA SADECE GET(OKUNABİLSİN) YA DA SADECE SET (DEĞER YAZILSIN ) DİYE
+
+	// PRİVATE SADECE O CLASSIN İÇİNDE KULLANILABİLİR DEMEK
+	// PRİVATE O CLASS A ÖZEL DEMEK
 
 }
